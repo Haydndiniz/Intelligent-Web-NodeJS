@@ -1,0 +1,359 @@
+:root {
+    --blue1: #A8DADC;
+    --blue2: #457B9D;
+    --blue3: #1D3557;
+    --white: #F1FAEE;
+    --yellow: #E9C46A;
+}
+
+html {
+    background-color: var(--blue1);
+    overflow-y: scroll;
+    height: 100%;
+}
+
+body {
+    font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: auto !important; /* this will center the page */
+    background-color: var(--white) !important;
+    position: relative;
+    height: auto;
+    width: 1000px;
+    min-height: 100% !important;
+}
+
+
+main {
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.boxed {
+    width: 100%;
+    padding: 10px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+}
+
+.scrolling {
+    overflow: scroll;
+    max-height: 40vh;
+}
+
+.outsideWrapper {
+    width: 256px;
+    height: 256px;
+    margin: 20px 60px;
+    border: 1px solid blue;
+}
+
+.insideWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.coveredImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.coveringCanvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 0, 0, .1);
+}
+
+.center {
+    border: 5px solid var(--yellow);
+    text-align: center;
+}
+
+.button-group {
+    padding-top: 10px;
+    display: block;
+    margin-left: 15%;
+    margin-right: 20%;
+    width: 80%;
+}
+
+.center_snap {
+    padding-top: 10px;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#stream {
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+}
+
+.logo-img {
+    height: 100%;
+}
+
+.logo {
+    width: 30px;
+    margin-top: -20px;
+    margin-rigt: 2px;
+    margin-bottom: -20px;
+}
+
+.storiesHtml {
+    font-size: 10px;
+}
+
+#storiesBody {
+    background-color: white !important;
+    display: block;
+    justify-content: center;
+    height: auto;
+    margin-left: 15%;
+}
+
+
+.storyCard {
+    width: 600px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f4f4f4;
+    box-shadow: 3px 3px 1rem rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+}
+
+.image-container {
+    max-width: 600px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.image-container > img {
+    width: 600px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.info-container {
+    padding: 2rem;
+}
+
+.heading {
+    font-size: 3rem;
+    font-family: "Palatino Linotype";
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-size: 2rem;
+    font-family: "Palatino Linotype";
+    margin-bottom: .5rem;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #00B7FF;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    margin-top: 2.5rem;
+    border-radius: 2rem;
+    transition: background-color .5s;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--blue3);
+    color: var(--white);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.title {
+    font-weight: bold;
+    color: var(--yellow) !important;
+    text-decoration: none;
+}
+
+li a:hover:not(.title) {
+    background-color: var(--blue2);
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+header {
+    font-size: 14px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    height: 45px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+button {
+    background-color: var(--blue1);
+
+    height: 45px;
+    min-width: 100px;
+    color: var(--blue3);
+    border-radius: 5px !important;
+    border: 2px solid var(--blue1);
+
+}
+
+input[type=submit] {
+    background-color: var(--blue1);
+    color: var(--blue3);
+    border-radius: 5px !important;
+    border: 2px solid var(--blue1);
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: var(--blue2);
+    color: var(--yellow);
+    border-radius: 5px !important;
+    border: 2px solid var(--blue2);
+}
+
+
+#submitbutton {
+    background-color: var(--blue1);
+    color: var(--blue3);
+    border-radius: 5px !important;
+    border: 2px solid var(--blue1);
+
+}
+
+.interfacecenter {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: var(--blue2);
+    color: var(--yellow);
+    border-radius: 5px !important;
+    border: 2px solid var(--blue2);
+
+}
+
+#roomNo {
+    padding-right: 30px;
+    width: 70%;
+}
+
+#roomNoGenerator {
+    margin-left: -9px !important;
+    width: 30%;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    margin-top: 6px !important;
+    margin-bottom: 16px;
+    padding-top: 2px;
+}
+
+#connect {
+    float: right;
+}
+
+#individualimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+#title_indiv {
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#author_indiv {
+    display: inline;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#canvas-left {
+    float: right;
+    width: 50%;
+}
+
+#canvas-right {
+    float: left;
+    width: 50%;
+}
+
+#image {
+    width: 90%;
+}
+
+#canvas {
+    width: 90%;
+}
+
+table, th, td {
+    border: 2px solid;
+    border-color: var(--blue2);
+    border-collapse: collapse;
+}
+
+#history {
+    border: 2px solid;
+    border-color: var(--blue2);
+}
